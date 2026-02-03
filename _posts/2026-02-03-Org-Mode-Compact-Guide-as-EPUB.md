@@ -12,7 +12,11 @@ I'm still learning Org Mode.  I came across [Org Mode Compact Guide](https://org
 
 Just want the file?  Here you go:
 
-👉 **[Download the Org Mode Compact Guide (EPUB)](/media/org-guide.epub)** 📗
+> 👉 Download the Org Mode Compact Guide (EPUB) 📗
+> 
+> **[Download org-guide.epub](/media/org-guide.epub)**
+>
+> (Last built 2026-02-03)
 
 ### Build It Yourself
 
