@@ -38,7 +38,7 @@ jobs:
           
           # Update the date in the markdown post
           TODAY=$(date +%Y-%m-%d)
-          sed -i "s/(Last built [0-9]\{4\}-[0-9]\{2\}-[0-9]\{2\})/(Last built $TODAY)/" "$POST_FILE"
+          sed -i -E "s/\(Last built [0-9]{4}-[0-9]{2}-[0-9]{2}\)/\(Last built $TODAY\)/" "$POST_FILE"
           
       - name: Commit and push changes
         run: |
