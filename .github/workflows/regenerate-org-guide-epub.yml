@@ -11,6 +11,8 @@ permissions:
 jobs:
   regenerate-epub:
     runs-on: ubuntu-latest
+    env:
+      POST_FILE: _posts/2026-02-03-Org-Mode-Compact-Guide-as-EPUB.md
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -36,12 +38,10 @@ jobs:
           
           # Update the date in the markdown post
           TODAY=$(date +%Y-%m-%d)
-          POST_FILE="_posts/2026-02-03-Org-Mode-Compact-Guide-as-EPUB.md"
           sed -i "s/(Last built [0-9]\{4\}-[0-9]\{2\}-[0-9]\{2\})/(Last built $TODAY)/" "$POST_FILE"
           
       - name: Commit and push changes
         run: |
-          POST_FILE="_posts/2026-02-03-Org-Mode-Compact-Guide-as-EPUB.md"
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add media/org-guide.epub "$POST_FILE"
