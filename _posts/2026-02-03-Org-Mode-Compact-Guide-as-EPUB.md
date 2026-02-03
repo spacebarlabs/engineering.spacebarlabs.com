@@ -16,11 +16,11 @@ Just want the file?  Here you go:
 > 
 > **[Download org-guide.epub](/media/org-guide.epub)**
 >
-> (Last built 2026-02-03)
+> (Generated fresh on every build. Last built 2026-02-03)
 
 ### Build It Yourself
 
-If the above file is out of date, you can create it yourself.
+This file is generated automatically during the site build and is not stored in the repository.
 
 ```bash
 # Clone the official Org Mode repository
