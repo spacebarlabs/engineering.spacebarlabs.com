@@ -46,5 +46,11 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add media/org-guide.epub _posts/2026-02-03-Org-Mode-Compact-Guide-as-EPUB.md
-          git commit -m "chore: regenerate org-guide.epub (automated monthly update)"
-          git push
+          
+          # Only commit if there are changes
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore: regenerate org-guide.epub (automated monthly update)"
+            git push
+          fi
