@@ -47,7 +47,7 @@ While Org Mode originated in Emacs, you don't need to switch to Emacs to manage 
 
 * **[Orgzly Revived](https://github.com/orgzly-revived/orgzly-android-revived)**: An Android outliner that handles `.org` files natively.  I use it with [Git Annex through Termux](https://github.com/spacebarlabs/dotfiles/blob/e3f126e021b1117e1f1ecff21d7e896292dc6d75/.local/bin/android-git-annex-sync.bak).  I don't currently understand why it introduces a new "Notebook" concept instead of reading/writing from the filesystem directly.  This is the cause of syncing failures that I've experienced.  The sync settings have to be set to write to the filesystem frequently to mitigate that.  That said, it's well made otherwise.  I'm not aware of another plaintext organizer on Android with the same amount of polish.
 
-If you're using Org Mode for a Getting Things Done (GTD) workflow, these titles might be helpful.  They sort on Android and Linux.  The emojis are especially nice on Android.
+If you're using Org Mode for a Getting Things Done (GTD) workflow, these titles might be helpful.  They sort on Android and Linux.  (And, I might add that it's hard to get meaningful emoji to sort!)  The emojis are especially nice on Android.
 
 ```
 ==> 0_inbox.org <==
